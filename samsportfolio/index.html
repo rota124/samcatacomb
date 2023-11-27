@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(21, 21, 85);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(13, 13, 55);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            ;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li a:hover {
+            color: rgb(115, 70, 157);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        main hr {
+            background-color: rgb(140, 111, 167);
+            height: 2px;
+            margin: 40px 84px;
+        }
+
+        .rightsection img {
+            width: 90%;
+        }
+
+        .purple {
+            color: rgb(135, 13, 135);
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondsection {
+            margin: auto;
+            max-width: 70%;
+            height: 80vh;
+
+        }
+
+        .secondsection h1 {
+
+            font-size: 1.6rem;
+        }
+
+        .text-gray {
+            color: grey;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 70vw;
+            height: 2px;
+            margin: 54px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Soumik's Portfolio</div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">services</a></li>
+                    <li><a href="">projects</a></li>
+                    <li><a href="">contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, myself <span class="purple">Soumik</span>
+                <div>and i am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">what i have done so far</span>
+            <h1>Past Experiences</h1>
+
+            <div class="box">
+                <div class="vertical">
+                <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML developer (2012-2015)
+                    </div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, temporibus! Pariatur fugiat minima tenetur atque doloremque corporis corrupti, rem magnam, ducimus molestias perferendis.</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Content Createor', 'Digi Gamer', 'Friendly Web Developer'],
+            typeSpeed: 60,
+        });
+    </script>
+</body>
+
+</html>
